@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuaonn7pbxs7v"]
+
+[ext_resource type="PackedScene" uid="uid://kf0g84axnrjn" path="res://scenes/home_ground.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://cba2b7ashj2co" path="res://scenes/in_game_ui.tscn" id="2_0wfyh"]
+
+[node name="Main" type="Node2D"]
+
+[node name="HomeGround" parent="." instance=ExtResource("1_o5qli")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InGameUi" parent="CanvasLayer" instance=ExtResource("2_0wfyh")]
+size_flags_horizontal = 4
+size_flags_vertical = 8
